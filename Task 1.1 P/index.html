@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="index.css">
+  <title>Rachit's Workspace</title>
+</head>
+
+<body>
+  <div>
+    <ul class="topnav">
+      <li><a class="active" href="#about">About</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <div id="banner-container">
+    <img class="banner-img" src="./images/Deakin Worldly.jpg" alt="Banner Image">
+    <div id="banner-text" class="centered">
+      <span>Welcome to Rachit's Webpage</span>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const bannerContainer = document.getElementById("banner-container");
+      const bannerText = document.getElementById("banner-text");
+
+      bannerContainer.addEventListener("click", function () {
+        bannerText.classList.toggle("hide");
+      });
+    });
+  </script>
+
+
+  <div class="avatar">
+    <img src="./images/Rachit Image.jpg" alt="Avatar">
+    <span>I'm a software engineering student majoring in computer science.</span>
+    <hr>
+    <p>What I've done thus far is listed below.</p>
+  </div>
+
+  <div class="project">
+    <div class="image1">
+      <img src="./images/Parking.jpeg" alt="Automated Parking System">
+    </div>
+    <div class="txt1">
+      <article>
+        Designed an automated car parking system<br>
+      </article>
+    </div>
+    <div class="image2">
+      <img src="./images/Coal safety.jpeg" alt="Coal Mine safety System">
+    </div>
+    <div class="txt2">
+      <article>
+        Designed a project for improving safety in coal mines <br>
+      </article>
+    </div>
+  </div>
+  <hr>
+
+  <div class="photo">
+    <h3>Image Library</h3>
+    <div class="p1"><img src="./Images/Image 1.jpeg" alt="1st Image"></div>
+    <div class="p2"><img src="./Images/Image 2.jpeg" alt="2nd Image"></div>
+    <div class="p3"><img src="./Images/Image 3.jpeg" alt="3rd Image"></div>
+    <div class="p4"><img src="./images/Image 4.jpeg" alt="4th Image"></div>
+  </div>
+</body>
+
+</html>
